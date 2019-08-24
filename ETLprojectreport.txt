@@ -1,0 +1,10 @@
+Project Report
+
+Extract:
+The original data source is the product of two API calls from MLB Data API (https://appac.github.io/mlb-data-api-docs/.)  The data was retrieved using Python in a JSON format.  
+
+Transform: 
+The JSON data was added to a DataFrame.  This data was then downloaded into a CSV file.  SQLAlchemy was used to add the DataFrame columns to PostgresSQL.
+
+Load:
+PostgresSQL was used to upload the CSV file and clean the data.  Data cleaning consisted of dropping columns that provided duplicate data.
